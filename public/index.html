@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Triva AI Travel Assistant</title>
+  <title>Fitra AI - Personal Fitness Coach</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Markdown parser marked & DOMPurify for secure rendering -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
@@ -16,20 +16,25 @@
   <div class="chat-wrapper">
     <header class="chat-header">
       <div class="avatar-wrapper">
-        <div class="bot-avatar">✨</div>
+        <div class="bot-avatar">⚡</div>
         <span class="status-indicator"></span>
       </div>
       <div class="header-info">
-        <h1>Triva AI</h1>
-        <p>Personal Travel Assistant • Online</p>
+        <h1>Fitra AI <span class="badge">PRO COACH</span></h1>
+        <p>Personal Fitness & Workout Coach • Siap Latihan</p>
       </div>
     </header>
 
     <main id="chat-box" class="chat-box">
       <div class="welcome-card">
-        <div class="welcome-icon">✈️</div>
-        <h3>Halo! Mau liburan ke mana kali ini?</h3>
-        <p>Tanyakan rencana liburan, rekomendasi tempat wisata, atau buat itinerary lengkap bersamaku!</p>
+        <div class="welcome-icon">💪</div>
+        <h3>Halo, Champion! Siap capai tubuh idealmu?</h3>
+        <p>Ceritakan target fitnessmu (misal: <em>turunkan berat badan, bangun otot, atau perbaiki stamina</em>) dan berapa hari seminggu kamu bisa olahraga. Aku buatkan jadwal latihan khususnya!</p>
+        <div class="quick-tags">
+          <span class="tag">🔥 Fat Loss</span>
+          <span class="tag">🏋️ Muscle Building</span>
+          <span class="tag">🏃 Endurance</span>
+        </div>
       </div>
     </main>
 
@@ -38,12 +43,12 @@
         <input 
           type="text" 
           id="user-input" 
-          placeholder="Ketik pesan liburanmu di sini..." 
+          placeholder="Ketik target kebugaran atau pertanyaanmu..." 
           autocomplete="off" 
           required 
         />
         <button type="submit" id="send-btn" aria-label="Kirim Pesan">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="22" y1="2" x2="11" y2="13"></line>
             <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
           </svg>

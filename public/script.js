@@ -6,6 +6,15 @@ const submitButton = document.getElementById('send-btn');
 // Menyimpan riwayat percakapan multi-turn sesuai spesifikasi API backend
 const conversationHistory = [];
 
+// Interaktivitas quick tags (klik tag untuk langsung mengisi input)
+document.querySelectorAll('.quick-tags .tag').forEach(tag => {
+  tag.style.cursor = 'pointer';
+  tag.addEventListener('click', () => {
+    input.value = `Saya ingin program untuk ${tag.textContent.replace(/[^\w\s]/gi, '').trim()}`;
+    input.focus();
+  });
+});
+
 form.addEventListener('submit', async function (e) {
   e.preventDefault();
 
